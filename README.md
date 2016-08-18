@@ -17,4 +17,12 @@ Many browsers have a maximum size of an HTML5 canvas element, typically with any
 Of course, creating one larger than this throws no errors neither from the creation nor the drawing to it (no drawing actions will complete)
 
 
+## PhantomJS - The size of the default form elements don't scale with zoomFactor
+
+Using zoomFactor is a promising way to make a website render "retina" type screenshots from webpages, but using a higher zoomFactor will scale all web page elements except the size of checkboxes, radio elements, and other form elements.
+
+Source code a screenshot demonstrating issue here https://gist.github.com/cmdcolin/05a916eead041dd4288cd461b15b0197
+
+When you dig into it, it seems to come back to a WebKit core issues that are confusing to follow https://bugs.webkit.org/show_bug.cgi?id=51544
+
 
