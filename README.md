@@ -4,7 +4,7 @@ A compilation of short descriptions of tech oddities, debunked or not
 
 ## Chrome - Adding many strings together causes a crash
 
-If you add a very large number of strings together in javascript, chrome will crash with a call stack error, but it will be very hard to find what part of the code generated this because breakpoints near this error fail in DevTools
+If you add a very large number of strings together in javascript, chrome will crash with a call stack error, but it will be very hard to find what part of the code (e.g. if this was in a larger project) generated this error because breakpoints near this error fail in DevTools
 
 Try running the following and opening it up in your browser
 
