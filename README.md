@@ -26,3 +26,22 @@ Source code a screenshot demonstrating issue here https://gist.github.com/cmdcol
 When you dig into it, it seems to come back to a WebKit core issues that are confusing to follow https://bugs.webkit.org/show_bug.cgi?id=51544
 
 
+## SVG - large feature sizes are not drawn
+
+Example
+
+```
+  <svg width="1400px" height="8px">
+    <rect
+      data-testid="bb-535451550-0"
+      x="-100000000"
+      y="0"
+      width="100000100"
+      height="3.3333333333333335"
+      fill="goldenrod"
+    ></rect>
+  </svg>
+
+```
+
+In Chrome 83 this is not visible on the screen, but ideally would be a 100px wide box
