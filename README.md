@@ -46,7 +46,7 @@ Example
 
 In Chrome 83 this is not visible on the screen, but ideally would be a 100px wide box
 
-## Can only store 2^24 elements in Map or 2^23 in regular JS object
+## Can only store 2^24 elements in Map or ~2^23 in regular JS object
 
 See https://searchvoidstar.tumblr.com/post/659634228574715904/an-amazing-error-message-if-you-put-more-than-2-24
 
