@@ -66,7 +66,10 @@ ctx2.fillRect(0, 0, 1000, 10, 10);
 ctx2.clearRect(-94504.1, 0, 29790.800000000003, 7);
 ```
 
-See https://bugs.chromium.org/p/chromium/issues/detail?id=1131528#c_ts1602745683
+See 
+
+https://bugs.chromium.org/p/chromium/issues/detail?id=1131528#c_ts1602745683
+https://codesandbox.io/s/sleepy-fermi-lhy2f?file=/src/index.js
 
 ## Can only store 2^24 elements in Map or ~2^23 in regular JS object
 
