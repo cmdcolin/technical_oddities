@@ -46,6 +46,28 @@ Example
 
 In Chrome 83 this is not visible on the screen, but ideally would be a 100px wide box
 
+## Canvas - large clearRect does not clear region properly
+
+Similar to the above SVG issue, performing something similar, clearing a large region from offscreen areas, with clearRect also fails on canvas
+
+```
+// this fails and the red bar disappears
+const elt = document.getElementById("cnv"); // canvas with width=1000 height=10
+const ctx = elt.getContext("2d");
+ctx.fillStyle = "#f00a";
+ctx.fillRect(0, 0, 1000, 10, 10);
+ctx.clearRect(-94504.1, 0, 29790.800000000003, 7);
+
+// this works and the green bar does not disappear
+const elt2 = document.getElementById("cnv2"); // canvas with width=1000 height=100
+const ctx2 = elt2.getContext("2d");
+ctx2.fillStyle = "#0f0a";
+ctx2.fillRect(0, 0, 1000, 10, 10);
+ctx2.clearRect(-94504.1, 0, 29790.800000000003, 7);
+```
+
+See https://bugs.chromium.org/p/chromium/issues/detail?id=1131528#c_ts1602745683
+
 ## Can only store 2^24 elements in Map or ~2^23 in regular JS object
 
 See https://searchvoidstar.tumblr.com/post/659634228574715904/an-amazing-error-message-if-you-put-more-than-2-24
