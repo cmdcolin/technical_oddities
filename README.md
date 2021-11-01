@@ -76,3 +76,8 @@ https://codesandbox.io/s/sleepy-fermi-lhy2f?file=/src/index.js
 See https://searchvoidstar.tumblr.com/post/659634228574715904/an-amazing-error-message-if-you-put-more-than-2-24
 
 Only affects some platforms e.g. V8
+
+
+### Chrome - The maximum string length is 512MB. If you use TextDecoder it returns silently if exceeded
+
+See https://cmdcolin.github.io/2021-10-30-spooky.html
