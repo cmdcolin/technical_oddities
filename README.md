@@ -10,7 +10,7 @@ Try running the following and opening it up in your browser
 
     (echo "<script>var s='Generate a call stack error'";for i in {1..100000}; do echo "+' $i'"; done; echo "</script>")>err.html
 
-edit 2023: may not crash chrome anymore, even if increases to 1,000,000
+edit 2023: may not crash chrome anymore, even if increases to 1,000,000, but may have similar type of situation with many ternary https://twitter.com/cmdcolin/status/1640104370800066561
 
 ## Javascript - Maximum size of a HTML5 canvas element
 
