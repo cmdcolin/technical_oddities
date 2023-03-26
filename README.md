@@ -10,6 +10,8 @@ Try running the following and opening it up in your browser
 
     (echo "<script>var s='Generate a call stack error'";for i in {1..100000}; do echo "+' $i'"; done; echo "</script>")>err.html
 
+edit 2023: may not crash chrome anymore, even if increases to 1,000,000
+
 ## Javascript - Maximum size of a HTML5 canvas element
 
 Many browsers have a maximum size of an HTML5 canvas element, typically with any one dimension limited to the max size of a 16 bit signed int http://stackoverflow.com/questions/6081483/maximum-size-of-a-canvas-element but considerably less when considering both dimensions
