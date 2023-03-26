@@ -16,8 +16,9 @@ edit 2023: may not crash chrome anymore, even if increases to 1,000,000
 
 Many browsers have a maximum size of an HTML5 canvas element, typically with any one dimension limited to the max size of a 16 bit signed int http://stackoverflow.com/questions/6081483/maximum-size-of-a-canvas-element but considerably less when considering both dimensions
 
-A quite jarring consequence though is that creating a canvas larger than allowed limits does not throw an error frome the creation or the drawing to it
+A quite jarring consequence though is that creating a canvas larger than allowed limits does not throw an error from the creation or the drawing to it
 
+See also https://github.com/jhildenbiddle/canvas-size#test-results
 
 ## PhantomJS - The size of the default form elements don't scale with zoomFactor
 
@@ -27,6 +28,7 @@ Source code a screenshot demonstrating issue here https://gist.github.com/cmdcol
 
 When you dig into it, it seems to come back to a WebKit core issues that are confusing to follow https://bugs.webkit.org/show_bug.cgi?id=51544
 
+update 2023: try in puppeteer...will report back
 
 ## SVG - large feature sizes are not drawn
 
